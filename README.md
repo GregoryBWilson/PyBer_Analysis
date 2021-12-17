@@ -1,19 +1,19 @@
 # Analysis & Visualization of Ride-sharing Data
 ## 1 Overview of Project
 
-The purpose of the project was to create a summary of the ride-sharing data by city type for PyBer, a ride-sharing app company. This was accompished using Pandas to create tabular views and Matplotlib to create a multiple-line graphical view of the total weekly fares for each city type. The project columnated in creating this report that summarizes how the data differs by city type and how those differences can be used by decision-makers at PyBer.
+The purpose of the project was to create a summary of the ride-sharing data by city type for PyBer, a ride-sharing app company. This was accomplished using Pandas to create tabular views and Matplotlib to create a multiple-line graphical view of the total weekly fares for each city type. The project culminated in creating this report that summarizes how the data differs by city type and how those differences can be used by decision-makers at PyBer.
 
 ## 2 Approach and Analysis
 
 ### 2.1 Input Data Provided
 
-We were provided with two csv files from from which to conduct our analysis.  The first file consists of data about the city, drivers and types of cities.  You can see from the code below that the types consist of Urban, Suburban and Rural.
+We were provided with two csv files from which to conduct our analysis.  The first file consists of data about the city, drivers and types of cities.  You can see from the code below that the types consist of Urban, Suburban and Rural.
 
 ![This is a VS screenshot of the PyBer_Challenge.py code](analysis/Figure_1_City_Data.png "Figure 1 - Input file of City Data")
 
 ***Figure 1 - Input file of City Data***
 
-In figure 2, below you can see the ride data than consists of 2375 records of individual ride that have been provide through Pyber.
+In figure 2, below you can see the ride data that consists of 2375 records of individual rides that have been provided through Pyber.
 
 ![This is a VS screenshot of the PyBer_Challenge.py code](analysis/Figure_2_Ride_Data.png "Figure 2 - Input file of Ride Data")
 
@@ -35,7 +35,7 @@ In this section we looked at the merged data to extract columns of interest.  Yo
 
 
 
-In figure 4 below I show two ways that the average fare was calculated.  The first that actual goes through all the transactions and calculates the mean and then the second (superior) method that simply divides two columns that had already been calculated.  Both methods, as expected, provide the same results.
+In figure 4 below I show two ways that the average fare was calculated.  The first, actually goes through all the transactions and calculates the mean and then the second (superior) method, simply divides two columns that had already been calculated.  Both methods, as expected, provide the same results.
 
 ![This is a VS screenshot of the PyBer_Challenge.py code](analysis/Figure_4_Working_with_Columns.png "Figure 4 - Working with Columns")
 
@@ -61,13 +61,13 @@ Table 4 shows the last 10 rows of data in the merged DataFrame "pyber_data_df". 
 
 ***Table 4 - Last 10 Rows of PyBer Data***
 
-In figure 5 below is s screen shot from the code that shows us grouping the pyber data with a type and date index and summing. 
+In figure 5 below is a screen shot from the code that shows us grouping the PyBer data with a type and date index and summing. 
 
 ![This is a VS screenshot of the PyBer_Challenge.py code](analysis/Figure_5_Grouping_and_Summing.png "Figure 5 - Grouping and Summing")
 
 ***Figure 5 - Grouping and Summing***
 
-View the data by groupby type and then by that is shown in table 5 for the first ten rows and table 6 as the last 10 rows.
+Viewing the data by type and then by date is shown in table 5 for the first ten rows and table 6 as the last 10 rows.
 
 
 
@@ -79,7 +79,7 @@ View the data by groupby type and then by that is shown in table 5 for the first
 
 ***Table 6 - Group by Type and Date Last 10 Rows***
 
-In preparation for a graphical representation of the ride data the index was reset and a pivot table index by date was created.  The columns were set to the city types and the value were set to fares collected.  
+In preparation for a graphical representation of the ride data, the index was reset and a pivot table index by date was created.  The columns were set to the city types and the values were set to fares collected.  
 
 ![This is a VS screenshot of the PyBer_Challenge.py code](analysis/Figure_6_Creating_Pivot_Table.png "Figure 6 - Creating Pivot Table")
 
@@ -105,17 +105,17 @@ The Matplotlib library was then called, providing a much clearer presentation of
 
 The summary below is represented mainly in Table 2 - Summary View of PyBer Data and  figure 7 - Total Weekly Fares by City Type.  
 
-Here are the highlights for the analysis for the data provide by PyBer.
+Here are the highlights for the analysis for the data provided by PyBer:
 
-- There is no discernible trend from month to month, if PyBer would like to determine season trend a longer data set is required.
-- Total revenue by  type of city is much greater in urban city and quit small in rural areas.
+- There is no discernable trend from month to month, if PyBer would like to determine seasonal trends a longer data set is required.
+- Total revenue by type of city is much greater in urban cities and quite small in rural areas.
 - As expected the average ride fare is larger in rural communities due to the likelihood of larger distances.
-- They is a very large disparity in the average fare per driver with rural drivers seeing more than four times that of urban drivers.
+- There is a very large disparity in the average fare per driver with rural drivers seeing more than four times that of urban drivers.
 
-It may be worth long at other data to determine what if any adjustment need to be made for PyBer.  Here are some thoughts to consider.
+It may be worth looking at other data to determine what, if any, adjustment needs to be made for PyBer.  Here are some thoughts to consider:
 
-- How quickly does PyBer provide service to clients in different city type, i.e. do rural clients need to wait too long for a ride.
-- How satisfied are PyBer drivers with the money they make driving for PyBer, i.e. are there too many urban drivers
+- How quickly does PyBer provide service to clients in different city types, i.e. do rural clients need to wait too long for a ride.
+- How satisfied are PyBer drivers with the money they make driving for PyBer, i.e. are there too many urban drivers.
 
-It's a difficult task to correctly balance the needs of the clients, the drivers and the company but it needs to be done if PyBer wants to continue to grow in the ride share market place.  I would recommend further investigation supported by additional information.
+It's a difficult task to correctly balance the needs of the clients, the drivers and the company, but it needs to be done if PyBer wants to continue to grow in the ride share market place.  I would recommend further investigation supported by additional information.
 
